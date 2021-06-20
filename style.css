@@ -1,0 +1,90 @@
+body{
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #222222;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:active { 
+    text-decoration: underline;
+}
+
+#language {
+    color: #1A0CAA;
+}
+
+.top-menu a {
+    color: #202021;
+} 
+
+.buttons button{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.bottom-line hr{
+    color: #DADCE0;
+}
+
+.bottom-menu a {
+    color: #70757A;
+    font-size: 15px;
+} 
+
+.bottom-menu{
+    background-color: #F3F3F2;
+}
+
+/* FLEXBOX STARTS HERE */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-menu {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    justify-content: flex-end;
+}
+
+.main-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-menu{
+    align-self: flex-end;
+}
+
+.bottom-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bottom-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
