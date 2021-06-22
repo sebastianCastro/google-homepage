@@ -1,9 +1,13 @@
 body{
+    height: 100vh;
+}
+
+.wrapper{
     font-family: Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     color: #222222;
-    font-size: 13px;
+    font-size: 13px
 }
 
 a {
@@ -14,7 +18,7 @@ a:hover, a:active {
     text-decoration: underline;
 }
 
-#language {
+#language-link {
     color: #1A0CAA;
 }
 
@@ -54,27 +58,42 @@ a:hover, a:active {
 
 /* FLEXBOX STARTS HERE */
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
 .top-menu {
-    gap: 20px;
     display: flex;
     align-items: center;
-    padding: 6px;
     justify-content: flex-end;
+    padding: 6px;
+    gap: 20px;
 }
 
 .main-logo {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+
+.search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box {
+
+}
+
+.seach-icon{
+
+}
+
+#language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bottom-menu{
-    align-self: flex-end;
 }
 
 .bottom-left {
