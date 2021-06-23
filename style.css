@@ -1,8 +1,11 @@
-body{
-    height: 100vh;
+html {
+    overflow: hidden;
 }
 
-.wrapper{
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     font-family: Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -26,7 +29,7 @@ a:hover, a:active {
     color: #202021;
 } 
 
-.buttons button{
+.buttons button {
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
     border-radius: 4px;
@@ -52,7 +55,7 @@ a:hover, a:active {
     font-size: 15px;
 } 
 
-.bottom-menu{
+.bottom-menu {
     background-color: #F3F3F2;
 }
 
@@ -61,49 +64,77 @@ a:hover, a:active {
 .top-menu {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    align-self: flex-end;
+    height: 48px;
     padding: 6px;
     gap: 20px;
 }
 
 .main-logo {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    align-self: center;
+    height: 165px;
 }
 
 .search-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    align-self: center;
+    height: 160px;
+    padding: 20px;
 }
 
-.search-box {
-
+.search-bar {
+    align-self: center;
 }
 
-.seach-icon{
+.search-icon {
+    align-self: flex-start;
+    padding-right: 13px;
+    margin-top: -5px;
+}
 
+.mic-icon {
+    align-self: flex-end;
+    padding-right: 13px;
+    margin-top: -5px;
+}
+
+.buttons button {
+    align-self: flex-end;
 }
 
 #language {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    align-self: center;
+    height: 200px;
 }
 
-.bottom-menu{
+.bottom-menu {
+    align-self: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.country {
+    padding: 15px;
+    align-items: center;
+}
+
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
 }
 
 .bottom-left {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    align-self: flex-start;
+    flex-grow: 1;
 }
 
 .bottom-right {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    align-self: flex-end;
 }
